@@ -1,0 +1,32 @@
+body {
+    background-color: $background;
+    font-family: $primary-font;
+}
+.logo {
+    background-color: lighten($secondary-dark, $amount: 10);
+    display: inline-block;
+    font-size: 3.5em;
+    padding: .25em;
+    color: darken($secondary-dark, $amount: 15)
+}
+.container {
+    position: relative;
+    left: 0;
+    @include transition(left .6s ease-in-out);
+}
+main {
+    padding: 0 2em;
+}
+section {
+    color: darken($secondary-color, $amount: 60);
+    h2 {
+        color: darken($secondary-color, $amount: 10);
+        font-size: 2em;
+        padding: 1em;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    @import 'main-desktop';
+}

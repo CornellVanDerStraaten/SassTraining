@@ -1,0 +1,10 @@
+header {
+    background-color: $primary-color;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    border-bottom: 10px dashed lighten($color: $primary-light, $amount: 30);
+    p {
+        padding: 1em;
+    }
+}
